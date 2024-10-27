@@ -1,7 +1,7 @@
 from django.urls import path
-from .views import demo
+from .views.ConversationListView import ConversationListView
 
 urlpatterns = [
-    # path('', demo.QueryStudent.as_view()),
+    path('dialogs/lists', ConversationListView.as_view(), name='conversation_list'),
 ]
 
